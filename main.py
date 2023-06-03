@@ -4,8 +4,7 @@ from calisan import Calisan
 from maviyaka import MaviYaka
 from beyazyaka import BeyazYaka
 import pandas as pd
-class Main:
-    try:
+try:
         # İnsan sınıfı için nesneler
         insan1 = Insan("12345678901", "Dila", "Kemer", 30, "Kadın", "Türk")
         insan2 = Insan("98765432109", "Ayşenur", "Baysel", 25, "Kadın", "Türk")
@@ -104,5 +103,5 @@ class Main:
         new_df = df[["ad", "soyad", "sektor", "yeni_maas"]]
         new_df.to_string()#noktaları silmek için
         print(new_df)
-    except Exception as e:
+   except Exception as e:
         print("Bir hata oluştu:", str(e))
